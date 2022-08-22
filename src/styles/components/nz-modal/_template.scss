@@ -1,0 +1,57 @@
+body.#{$themeName} {
+    .ant-modal {
+        width: auto !important;
+        display: flex;
+        justify-content: center;
+        color: $textColor;
+
+        .ant-modal-body {
+            height: 100%;
+            padding: 0 !important;
+            background: $background;
+        }
+
+        .ant-modal-footer {
+            background-color: $background;
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            border-top: none !important;
+
+            .ant-btn {
+                min-width: 90px;
+                margin: 0 5px;
+            }
+        }
+
+        .ant-modal-content {
+            width: 500px;
+            box-shadow: none !important;
+        }
+
+        .ant-modal-close-x {
+            width: 30px;
+            height: 30px;
+            color: $textColor;
+
+            .ant-modal-close-icon {
+                vertical-align: 0.5em;
+            }
+        }
+
+        &.confirmation-modal {
+            width: 380px !important;
+
+            .ant-modal-body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 25px !important;
+            }
+
+            .ant-modal-footer {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

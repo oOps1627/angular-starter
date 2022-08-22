@@ -1,0 +1,13 @@
+body.#{$themeName} {
+    .ant-dropdown-menu {
+        .ant-dropdown-menu-item {
+            font-size: 12px;
+            padding: 2px 12px;
+
+            i[class^='icon-'] {
+                font-size: 10px;
+                margin-right: 7px;
+            }
+        }
+    }
+}

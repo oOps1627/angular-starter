@@ -1,0 +1,15 @@
+body.#{$themeName} {
+    .ant-input {
+        background: $background;
+        border-radius: 4px;
+        border: none;
+        padding: 4px 7px;
+        outline: none;
+        color: $textColor;
+
+        &:focus {
+            border-color: #177ddc;
+            box-shadow: 0 0 0 2px rgb(23 125 220 / 20%);
+        }
+    }
+}

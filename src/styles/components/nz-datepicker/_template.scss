@@ -1,0 +1,17 @@
+body.#{$themeName} {
+    nz-date-picker {
+        background-color: $background !important;
+        border-radius: 4px;
+        border: none !important;
+    }
+
+    .ant-picker-panel {
+        background: $tabBackground !important;
+    }
+
+    .ant-dropdown-menu-item-divider,
+    .ant-dropdown-menu-submenu-title-divider {
+        margin: 2px 10px !important;
+        background-color: $submenu-title-divider !important;
+    }
+}

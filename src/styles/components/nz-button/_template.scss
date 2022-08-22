@@ -1,0 +1,33 @@
+body.#{$themeName} {
+    button[nz-button] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        background-color: $backgroundButtonSecondary;
+        box-sizing: border-box;
+        color: #fff;
+
+        &:hover {
+            background-color: darken($backgroundButtonSecondary, 5);
+        }
+
+        &[disabled] {
+            opacity: 0.4;
+        }
+
+        &[nztype='primary'] {
+            background-color: $backgroundButtonPrimary;
+
+            &:hover {
+                background-color: darken($backgroundButtonPrimary, 8);
+            }
+        }
+    }
+}

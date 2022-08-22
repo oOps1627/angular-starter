@@ -1,0 +1,37 @@
+body.#{$themeName} {
+    nz-tabset {
+        height: 100%;
+
+        .ant-tabs-nav {
+            margin-bottom: 7px;
+        }
+
+        .ant-tabs-nav::before {
+            border-bottom: none !important;
+        }
+
+        .ant-tabs-tab {
+            color: $lightGrey;
+            padding: 4px 0;
+            font-weight: 600;
+
+            &.ant-tabs-tab-active .ant-tabs-tab-btn {
+                color: $risingColor;
+            }
+        }
+
+        .ant-tabs-tab + .ant-tabs-tab {
+            margin: 0 0 0 18px;
+        }
+
+        .nt-tabs-tabpane,
+        .ant-tabs-content {
+            height: 100%;
+        }
+
+        .ant-tabs-ink-bar {
+            background-color: $risingColor;
+            height: 1px !important;
+        }
+    }
+}
